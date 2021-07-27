@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SV Discount progress bar\n"
+"POT-Creation-Date: 2021-01-26 11:44+1000\n"
+"PO-Revision-Date: 2021-01-26 11:44+1000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: sv-disper-bar.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: classes/Admin.php:37 sv-disper-bar.php:63
+msgid "SV Discount progress bar"
+msgstr "SV Discount progress bar"
+
+#: classes/Admin.php:38
+msgid "SV Discounts"
+msgstr "SV Cкидки"
+
+#: classes/Admin.php:58 classes/Admin.php:62 classes/Admin.php:178
+#: classes/Main.php:153
+msgid "Settings"
+msgstr "Настройки"
+
+#: classes/Admin.php:76
+msgid "Rule settings"
+msgstr "Настройки правил"
+
+#: classes/Admin.php:80
+msgid "Add rules"
+msgstr "Добавить правила"
+
+#: classes/Admin.php:94
+msgid "Style settings"
+msgstr "Настройки стилей"
+
+#: classes/Admin.php:98
+msgid "Styles"
+msgstr "Стили"
+
+#: classes/Admin.php:179
+msgid "Rules"
+msgstr "Правила"
+
+#: classes/Admin.php:180
+msgid "Style"
+msgstr "Стиль"
+
+#: classes/Front.php:24 classes/Front.php:55 classes/Functions.php:145
+#: classes/Options.php:214
+#, php-format
+msgid "Discount: %d%s"
+msgstr "Скидка: %d%s"
+
+#: classes/Front.php:28 classes/Options.php:219
+#, php-format
+msgid "of %s"
+msgstr "от %s"
+
+#: classes/Main.php:72
+msgid "Discount"
+msgstr "Скидка"
+
+#: classes/Main.php:116 includes/options.php:81
+msgid "Delete"
+msgstr "Удалить"
+
+#: classes/Main.php:117
+msgid "Reset"
+msgstr "Сброс"
+
+#: classes/Main.php:152
+msgid "View settings"
+msgstr "Просмотр настроек"
+
+#: classes/Options.php:16 classes/Options.php:206
+msgid "Get a discount"
+msgstr "Получить скидку"
+
+#: classes/Options.php:97
+msgid "The color of the right border of the message block"
+msgstr "Цвет правого border-а блока сообщения"
+
+#: classes/Options.php:100
+msgid "Message block background color"
+msgstr "Цвет фона блока сообщения"
+
+#: classes/Options.php:103
+msgid "Message block text color (link)"
+msgstr "Цвет текта блока сообщения (ссылка)"
+
+#: classes/Options.php:106
+msgid "Background color of dynamic progress bar"
+msgstr "Цвет фона динамического прогресс бара"
+
+#: classes/Options.php:109
+msgid "End point label background color"
+msgstr "Цвет фона метки конечной точки"
+
+#: classes/Options.php:112
+msgid "Price block text color"
+msgstr "Цвет текста блока цена"
+
+#: classes/Options.php:115
+msgid "Price block background color"
+msgstr "Цвет фона блока цена"
+
+#: classes/Options.php:118
+msgid "Tooltip text color (interest rate)"
+msgstr "Цвет текста подсказки (процентная ставка)"
+
+#: classes/Options.php:121
+msgid "Hint block outline color (border)"
+msgstr "Цвет обводки блока подсказки (border)"
+
+#: classes/Options.php:124
+msgid "Tooltip block background color"
+msgstr "Цвет фона блока подсказки"
+
+#: classes/Options.php:127
+msgid "Common container color"
+msgstr "Цвет общего контейнера"
+
+#: classes/Processing_Fields.php:33
+msgid "Text field cannot be empty"
+msgstr "Поле текст не может быть пустым"
+
+#: classes/Processing_Fields.php:40
+msgid "The link field cannot be empty"
+msgstr "Поле ссылка не может быть пустым"
+
+#: classes/Processing_Fields.php:47
+msgid "The settings were successfully saved."
+msgstr "Настройки были успешно сохранены."
+
+#: classes/Processing_Fields.php:76
+msgid "There must be at least one rule"
+msgstr "Должно быть хотя бы одно правило"
+
+#: classes/Processing_Fields.php:83
+msgid "The value of the amount field can only contain numbers"
+msgstr "Значение поля сумма может состоять только из цифр"
+
+#: classes/Processing_Fields.php:90
+msgid "The value of the percentage field can only be numbers"
+msgstr "Значение поля процент может состоять только из цифр"
+
+#: classes/Processing_Fields.php:97
+msgid "The value of the field amount cannot be equal to zero"
+msgstr "Значение поля сумма не может равняться нулю"
+
+#: classes/Processing_Fields.php:104
+msgid "The percentage field value cannot be zero"
+msgstr "Значение поля процент не может равняться нулю"
+
+#: classes/Processing_Fields.php:110
+msgid "The value of the field percentage cannot be more than 100%"
+msgstr "Значение поля процент не может быть больше 100%"
+
+#: classes/Processing_Fields.php:118
+msgid "The rules were successfully saved."
+msgstr "Правила были успешно сохранены."
+
+#: classes/Processing_Fields.php:154
+msgid "Color field value does not match CSS format NEX"
+msgstr "Значение поля цвет не соответствует CSS формату NEX"
+
+#: classes/Processing_Fields.php:163
+msgid "The color scheme was successfully saved."
+msgstr "Цветовая схема была успешно сохранена."
+
+#: includes/options.php:23
+msgid "Link"
+msgstr "Ссылка"
+
+#: includes/options.php:29
+msgid "Link text"
+msgstr "Текст ссылки"
+
+#: includes/options.php:35
+msgid "Show prices<br>on mobile"
+msgstr "Показать цены<br>на мобильном"
+
+#: includes/options.php:67
+#, php-format
+msgid "Amount (%s)"
+msgstr "Сумма (%s)"
+
+#: includes/options.php:72
+msgid "Percent %"
+msgstr "Процент %"
+
+#: includes/options.php:89
+msgid "Add"
+msgstr "Добавить"
+
+#: sv-disper-bar.php:62
+#, php-format
+msgid ""
+"For the plugin %s to work correctly, install and activate the plugin "
+"WooCommerce!"
+msgstr ""
+"Для корректной работы плагина %s установите и активируете плагин WooCommerce!"
+
+#. Plugin URI of the plugin/theme
+msgid "https://sovetit.ru/wp-plugins/sv-disper-bar"
+msgstr "https://sovetit.ru/wp-plugins/sv-disper-bar"
+
+#. Description of the plugin/theme
+msgid ""
+"The plugin shows clients an attractive indicator at the bottom of the site, "
+"thereby informing in advance that when buying a product for a certain "
+"amount, the client will receive a discount in accordance with the plugin "
+"settings."
+msgstr ""
+"Плагин показывает клиентам привлекательный индикатор в нижней части сайта, "
+"тем самым заранее информирует о том, что при покупке товара на определенную "
+"сумму - клиент получит скидку в соответствии с настройками плагина."
+
+#. Author of the plugin/theme
+msgid "Pavel Ketov"
+msgstr "Павел Кетов"
+
+#. Author URI of the plugin/theme
+msgid "https://sovetit.ru"
+msgstr "https://sovetit.ru"
+
+#~ msgid "Your discount"
+#~ msgstr "Ваша скидка"
+
+#~ msgid "link"
+#~ msgstr "Ссылка"
+
+#~ msgid "Text button"
+#~ msgstr "Текст ссылки"
+
+#~ msgid "Reset to default"
+#~ msgstr "Сбросить по умолчанию"
+
+#~ msgid ""
+#~ "The plugin allows WooCommerce users to install a discount progress bar on "
+#~ "their website to provide cumulative discounts."
+#~ msgstr ""
+#~ "Плагин позволяет пользователям WooCommerce установить на свой сайт "
+#~ "скидочный прогресс бар для предоставления накопительных скидок."
+
+#~ msgid "Settings SV Discount progress bar"
+#~ msgstr "Настройки SV Скидок прогресс бара"
+
+#~ msgid "Adds a discount progress bar for WooCommerce"
+#~ msgstr "Добавляет скидочный прогресс бар для WooCommerce"
+
+#, fuzzy
+#~| msgid "The value of the field amount cannot be equal to zero"
+#~ msgid "The value of the field color no"
+#~ msgstr "Значение поля сумма не может равняться нулю"
+
+#~ msgid "of"
+#~ msgstr "от"

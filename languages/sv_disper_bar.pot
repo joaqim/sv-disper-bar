@@ -1,0 +1,235 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: SV Discount progress bar\n"
+"POT-Creation-Date: 2021-01-26 11:45+1000\n"
+"PO-Revision-Date: 2021-01-11 18:53+1000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: sv-disper-bar.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: classes/Admin.php:37 sv-disper-bar.php:63
+msgid "SV Discount progress bar"
+msgstr ""
+
+#: classes/Admin.php:38
+msgid "SV Discounts"
+msgstr ""
+
+#: classes/Admin.php:58 classes/Admin.php:62 classes/Admin.php:178
+#: classes/Main.php:153
+msgid "Settings"
+msgstr ""
+
+#: classes/Admin.php:76
+msgid "Rule settings"
+msgstr ""
+
+#: classes/Admin.php:80
+msgid "Add rules"
+msgstr ""
+
+#: classes/Admin.php:94
+msgid "Style settings"
+msgstr ""
+
+#: classes/Admin.php:98
+msgid "Styles"
+msgstr ""
+
+#: classes/Admin.php:179
+msgid "Rules"
+msgstr ""
+
+#: classes/Admin.php:180
+msgid "Style"
+msgstr ""
+
+#: classes/Front.php:24 classes/Front.php:55 classes/Functions.php:145
+#: classes/Options.php:214
+#, php-format
+msgid "Discount: %d%s"
+msgstr ""
+
+#: classes/Front.php:28 classes/Options.php:219
+#, php-format
+msgid "of %s"
+msgstr ""
+
+#: classes/Main.php:72
+msgid "Discount"
+msgstr ""
+
+#: classes/Main.php:116 includes/options.php:81
+msgid "Delete"
+msgstr ""
+
+#: classes/Main.php:117
+msgid "Reset"
+msgstr ""
+
+#: classes/Main.php:152
+msgid "View settings"
+msgstr ""
+
+#: classes/Options.php:16 classes/Options.php:206
+msgid "Get a discount"
+msgstr ""
+
+#: classes/Options.php:97
+msgid "The color of the right border of the message block"
+msgstr ""
+
+#: classes/Options.php:100
+msgid "Message block background color"
+msgstr ""
+
+#: classes/Options.php:103
+msgid "Message block text color (link)"
+msgstr ""
+
+#: classes/Options.php:106
+msgid "Background color of dynamic progress bar"
+msgstr ""
+
+#: classes/Options.php:109
+msgid "End point label background color"
+msgstr ""
+
+#: classes/Options.php:112
+msgid "Price block text color"
+msgstr ""
+
+#: classes/Options.php:115
+msgid "Price block background color"
+msgstr ""
+
+#: classes/Options.php:118
+msgid "Tooltip text color (interest rate)"
+msgstr ""
+
+#: classes/Options.php:121
+msgid "Hint block outline color (border)"
+msgstr ""
+
+#: classes/Options.php:124
+msgid "Tooltip block background color"
+msgstr ""
+
+#: classes/Options.php:127
+msgid "Common container color"
+msgstr ""
+
+#: classes/Processing_Fields.php:33
+msgid "Text field cannot be empty"
+msgstr ""
+
+#: classes/Processing_Fields.php:40
+msgid "The link field cannot be empty"
+msgstr ""
+
+#: classes/Processing_Fields.php:47
+msgid "The settings were successfully saved."
+msgstr ""
+
+#: classes/Processing_Fields.php:76
+msgid "There must be at least one rule"
+msgstr ""
+
+#: classes/Processing_Fields.php:83
+msgid "The value of the amount field can only contain numbers"
+msgstr ""
+
+#: classes/Processing_Fields.php:90
+msgid "The value of the percentage field can only be numbers"
+msgstr ""
+
+#: classes/Processing_Fields.php:97
+msgid "The value of the field amount cannot be equal to zero"
+msgstr ""
+
+#: classes/Processing_Fields.php:104
+msgid "The percentage field value cannot be zero"
+msgstr ""
+
+#: classes/Processing_Fields.php:110
+msgid "The value of the field percentage cannot be more than 100%"
+msgstr ""
+
+#: classes/Processing_Fields.php:118
+msgid "The rules were successfully saved."
+msgstr ""
+
+#: classes/Processing_Fields.php:154
+msgid "Color field value does not match CSS format NEX"
+msgstr ""
+
+#: classes/Processing_Fields.php:163
+msgid "The color scheme was successfully saved."
+msgstr ""
+
+#: includes/options.php:23
+msgid "Link"
+msgstr ""
+
+#: includes/options.php:29
+msgid "Link text"
+msgstr ""
+
+#: includes/options.php:35
+msgid "Show prices<br>on mobile"
+msgstr ""
+
+#: includes/options.php:67
+#, php-format
+msgid "Amount (%s)"
+msgstr ""
+
+#: includes/options.php:72
+msgid "Percent %"
+msgstr ""
+
+#: includes/options.php:89
+msgid "Add"
+msgstr ""
+
+#: sv-disper-bar.php:62
+#, php-format
+msgid ""
+"For the plugin %s to work correctly, install and activate the plugin "
+"WooCommerce!"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://sovetit.ru/wp-plugins/sv-disper-bar"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The plugin shows clients an attractive indicator at the bottom of the "
+"site, thereby informing in advance that when buying a product for a "
+"certain amount, the client will receive a discount in accordance with the "
+"plugin settings."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pavel Ketov"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://sovetit.ru"
+msgstr ""
