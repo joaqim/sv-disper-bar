@@ -6,7 +6,7 @@ Website: https://sovetit.ru/wp-plugins/sv-disper-bar
 Tags: woocommerce, e-commerce, store, sales, sell, woo, shop, cart, checkout, discount, woo commerce, sv-disper-bar
 Requires at least: 5.3
 Tested up to: 5.7
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 Requires PHP: 7.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -31,6 +31,9 @@ Demonstration works for Storefront & WooCommerce.
 Cumulative discount, the amount of which directly depends on the amount spent: the more you buy, the higher the discount.
 
 == Changelog ==
+
+= 2.0.2 =
+* Add : Animation to progress bar (WIP)
 
 = 2.0.1 =
 * Fix : Sub total calculation not working as expected in checkout
