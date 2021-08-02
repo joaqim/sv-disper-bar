@@ -46,9 +46,11 @@ class Front extends Main {
 	 */
 	public function html_footer() {
 		$functions 		= new Functions();
-		$options 		= new Options();
+		$options 		  = new Options();
 		$sv_counter 	= $functions->bar_counter();
 		$settings 		= $options->settings();
+		$sv_width     = $functions->width();
+		$animate_bar  = $sv_width == 0;
 		if ( $sv_counter > 0 ) {
 			$link_button = apply_filters( 'sv_disper_bar_link_button', $settings['mess']['link_button'] );
 			$text_button = sprintf(
@@ -68,7 +70,11 @@ class Front extends Main {
 				</a>
 			</div>
 			<div class="sv-disper-prices">
-				<div class="sv-disper-bar" id="sv-disper-bar"<?php echo $prices_bar_percent ?>></div>
+				<div
+					id="sv-disper-bar"
+					<?php echo 'class="sv-disper-bar' . (($animate_bar) ? ' sv-disper-bar-animate"' : '"') ?>
+					<?php echo $prices_bar_percent ?>>
+				</div>
 				<?php self::html_item() ?>
 			</div>
 		</div>

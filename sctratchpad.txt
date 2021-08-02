@@ -77,3 +77,41 @@ public function bar_animation_css() {
 				--from-background-position: 100%; --to-background-position: 0%; animation:progress 3s ease-in alternate, progress-animation 2s linear infinite;
 				';
 	}
+	
+.sv-disper-bar-pointer-wrapper {
+	position: absolute;
+	width: 100%;
+	transition: all 1s;
+}
+
+.sv-disper-bar-pointer {
+	position: relative;
+	right: 0px;
+	transition: inherit;
+}
+
+.sv-disper-bar-animate {
+	transition-timing-function: ease;
+	animation: progress 3s ease-in alternate;
+}
+
+@keyframes progress {
+	0% {
+		width: 0%;
+		animation-timing-function: ease-out;
+	}
+	50% {
+		width: 30%;
+		animation-delay: 5s;
+		animation-timing-function: ease-in-out;
+	}
+}
+
+@keyframes progress-animation {
+ 	from {
+		background-position: 100%;
+		}
+	to {
+		background-position: 0;
+	}
+}

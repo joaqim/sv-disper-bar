@@ -141,3 +141,20 @@ body {
 		transform: rotate(-90deg) translateY(85%);
 	}
 }
+
+.sv-disper-bar-animate {
+	transition-timing-function: ease;
+	animation: progress 3s ease-in alternate;
+}
+
+@keyframes progress {
+	0% {
+		width: 0%;
+		animation-timing-function: ease-out;
+	}
+	50% {
+		width: 30%;
+		animation-delay: 5s;
+		animation-timing-function: ease-in-out;
+	}
+}
