@@ -1,4 +1,0 @@
-* sv-disper-bar
-
-** Notes
-*** TODO Make progress bar width animation faster relative to amount of change?
