@@ -1,0 +1,79 @@
+ <?php if ($animate_bar) echo " sv-disper-bar-animate"; ?>
+ 
+ // Based on easing equations from Robert Penner (http://www.robertpenner.com/easing)
+	var baseEasings = {};
+
+	$.each( [ "Quad", "Cubic", "Quart", "Quint", "Expo" ], function( i, name ) {
+    	baseEasings[ name ] = function( p ) {
+        	return Math.pow( p, i + 2 );
+    	};
+	});
+
+	$.extend( baseEasings, {
+    	Sine: function( p ) {
+        	return 1 - Math.cos( p * Math.PI / 2 );
+		},
+		Circ: function( p ) {
+			return 1 - Math.sqrt( 1 - p * p );
+		},
+		Elastic: function( p ) {
+			return p === 0 || p === 1 ? p :
+				-Math.pow( 2, 8 * ( p - 1 ) ) * Math.sin( ( ( p - 1 ) * 80 - 7.5 ) * Math.PI / 15 );
+		},
+		Back: function( p ) {
+			return p * p * ( 3 * p - 2 );
+		},
+		Bounce: function( p ) {
+			var pow2,
+				bounce = 4;
+
+			while ( p < ( ( pow2 = Math.pow( 2, --bounce ) ) - 1 ) / 11 ) {}
+			return 1 / Math.pow( 4, 3 - bounce ) - 7.5625 * Math.pow( ( pow2 * 3 - 2 ) / 22 - p, 2 );
+		}
+	});
+
+	$.each( baseEasings, function( name, easeIn ) {
+		$.easing[ "easeIn" + name ] = easeIn;
+		$.easing[ "easeOut" + name ] = function( p ) {
+			return 1 - easeIn( 1 - p );
+		};
+		$.easing[ "easeInOut" + name ] = function( p ) {
+			return p < 0.5 ?
+				easeIn( p * 2 ) / 2 :
+				1 - easeIn( p * -2 + 2 ) / 2;
+		};
+	});
+	
+background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+background-size: 700% 100%;
+, progress-animation 2s linear infinite;
+
+$("#sv-disper-bar").css({"background": ""})
+		 $("#sv-disper-bar").removeAttr('style');
+		 
+		if (sv_width > 0) {
+			$("#sv-disper-bar").removeClass("sv-disper-bar-animate");
+		} else {
+			$("#sv-disper-bar").addClass("sv-disper-bar-animate");
+		}
+		
+		
+<div class="sv-disper-pointer-wrapper"
+						 <?php echo 'style="transform: translateX(' . $sv_width . '%);"' ?> 
+					>
+						<div class="sv-disper-bar-pointer" 
+							<?php echo 'style="transform: translateX(-' . $sv_width . '%);"' ?> 
+						>
+							POINTER
+						</div>
+					</div>
+
+public function bar_animation_css() {
+		return 'background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    			background-size: 300% 100%;
+	
+				transition-timing-function: ease;
+				--from-width:0; --to-width: 70%; 
+				--from-background-position: 100%; --to-background-position: 0%; animation:progress 3s ease-in alternate, progress-animation 2s linear infinite;
+				';
+	}
