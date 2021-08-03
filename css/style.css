@@ -142,9 +142,31 @@ body {
 	}
 }
 
+.sv-disper-cap-ends {
+	margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+	width: 0.3em;
+	height: 90%;
+	background: rgb(150,150,150);
+}
+
+.sv-disper-bar {
+	background: repeating-linear-gradient(-55deg, #f40, #f40 10px, #f50 10px, #f50 20px);
+	background-size: 200% 100%;
+
+	animation: progress-animation 4s linear infinite;
+}
+
 .sv-disper-bar-animate {
+	border-right: 0px solid;
+	border-color: red;
+
 	transition-timing-function: ease;
-	animation: progress 3s ease-in alternate;
+	animation: progress 3s ease-in alternate, progress-animation 6s linear infinite;
+
 }
 
 @keyframes progress {
@@ -156,5 +178,14 @@ body {
 		width: 30%;
 		animation-delay: 5s;
 		animation-timing-function: ease-in-out;
+	}
+}
+
+@keyframes progress-animation {
+	from {
+		background-position: 100%;
+	}
+	to {
+		background-position: 0;
 	}
 }
