@@ -5,3 +5,9 @@
 *** TODO Create a pointer or graphic on end of progress bar
 *** TODO Make initial animation more flashy
 *** TODO Add animations/effects when user reaches a discount breakpoint
+
+** Bugs
+
+*** TODO Progress can't reliably dynamically change between mobile and desktop:
+  Discount CTA's are hidden on mobile when process bar is statically
+  generated on start, see `if (!wp_is_mobile()) {...}` in classes/Front.php:html_item()
