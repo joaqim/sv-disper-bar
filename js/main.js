@@ -15,7 +15,7 @@ jQuery(function ($) {
           {
             width: sv_width + "%",
           },
-          2000
+          1000
         );
 
         if (sv_counter > 0) {

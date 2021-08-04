@@ -6,7 +6,7 @@
  * Author URI:  https://sovetit.ru
  * Author:      Pavel Ketov
  * Contributors: Joaqim
- * Version:     2.0.4
+ * Version:     2.0.6
  * License:     GPL-2.0+
  * Text Domain: sv_disper_bar
  * Domain Path: /languages
@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 if ( ! defined( 'SV_DISPER_BAR_PLUGIN_FILE' ) ) {
 
 	// Версия плагина
-	define( 'SV_DISPER_BAR_VERSION', '2.0.4' );
+	define( 'SV_DISPER_BAR_VERSION', '2.0.6' );
 
 	define( 'SV_DISPER_BAR_PLUGIN_FILE', __FILE__ );
 

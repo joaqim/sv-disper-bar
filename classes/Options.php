@@ -187,7 +187,7 @@ class Options extends Main {
 		.sv-disper-bar-striped {
 			background: repeating-linear-gradient(-55deg, {$this->color_css( 'bar-stripe-primary' )}, {$this->color_css( 'bar-stripe-primary' )} 10px, {$this->color_css( 'bar-stripe-secondary' )} 10px, {$this->color_css( 'bar-stripe-secondary' )} 20px);
 			background-attachment: fixed;
-			background-size: 130% 100%;
+			background-size: 120% 100%;
 		}
 		.sv-disper-container .sv-disper-prices .sv-disper-item {
 			background-color: {$this->color_css( 'item-background' )};
