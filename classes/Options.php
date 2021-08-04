@@ -78,9 +78,8 @@ class Options extends Main {
 				'mess-background'             => '#c107b7',
 				'link-color'                  => '#ffffff',
 				'bar-background'              => '#52b344',
-				'bar-cap-ends'								=> '#999999',
-				'bar-stripe-primary'					=> '#ff4400',
-				'bar-stripe-secondary'				=> '#ff5500',
+				'bar-stripe-primary'					=> '#fbbc04',
+				'bar-stripe-secondary'				=> '#ffab1c',
 				'item-background'             => '#ffffff',
 				'price-color'                 => '#292929',
 				'price-background'            => '#ffffff',
@@ -110,10 +109,10 @@ class Options extends Main {
 				$title = esc_html__( 'Background color of dynamic progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
 				break;
 			case 'bar-stripe-primary' :
-				$title = esc_html__( 'Primary Color of striped progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
+				$title = esc_html__( 'Primary color of striped progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
 				break;
 			case 'bar-stripe-secondary' :
-				$title = esc_html__( 'Secondary Color of striped progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
+				$title = esc_html__( 'Secondary color of striped progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
 				break;
 			case 'item-background' :
 				$title = esc_html__( 'End point label background color', SV_DISPER_BAR_PLUGIN_DOMAIN );
@@ -188,7 +187,7 @@ class Options extends Main {
 		.sv-disper-bar-striped {
 			background: repeating-linear-gradient(-55deg, {$this->color_css( 'bar-stripe-primary' )}, {$this->color_css( 'bar-stripe-primary' )} 10px, {$this->color_css( 'bar-stripe-secondary' )} 10px, {$this->color_css( 'bar-stripe-secondary' )} 20px);
 			background-attachment: fixed;
-			background-size: 160% 100%;
+			background-size: 130% 100%;
 		}
 		.sv-disper-container .sv-disper-prices .sv-disper-item {
 			background-color: {$this->color_css( 'item-background' )};
@@ -244,8 +243,7 @@ class Options extends Main {
 				</span>
 			</div>
 			<div class="sv-disper-prices-preview">
-			<div class="sv-disper-bar-preview sv-disper-bar-preview-striped-animation" style="width:15%;  <?php echo 'background: repeating-linear-gradient(-55deg, ' . $this->color_css( 'bar-stripe-primary' ) . ', ' . $this->color_css( 'bar-stripe-primary' ) . ' 10px, ' . $this->color_css( 'bar-stripe-secondary' ) . ' 10px, ' . $this->color_css( 'bar-stripe-secondary' ) . ' 20px);' .  'background-attachment: fixed; background-size: 130% 100%;'
- ?>">
+			<div class="sv-disper-bar-preview sv-disper-bar-preview-striped-animation" style="width:15%;  <?php echo 'background: repeating-linear-gradient(-55deg, ' . $this->color_css( 'bar-stripe-primary' ) . ', ' . $this->color_css( 'bar-stripe-primary' ) . ' 10px, ' . $this->color_css( 'bar-stripe-secondary' ) . ' 10px, ' . $this->color_css( 'bar-stripe-secondary' ) . ' 20px);' ?>">
 </div>
 				<div class="sv-disper-item-preview" style="left:25%; background-color:<?php echo $this->color_css( 'item-background' ) ?>">
 					<div class="sv-disper-data-title" style="color:<?php echo $this->color_css( 'price-title-color' ) ?>;border-color:<?php echo $this->color_css( 'price-title-border' ) ?>;background-color:<?php echo $this->color_css( 'price-title-background' ) ?>">
