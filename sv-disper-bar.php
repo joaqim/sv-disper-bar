@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 if ( ! defined( 'SV_DISPER_BAR_PLUGIN_FILE' ) ) {
 
 	// Версия плагина
-	define( 'SV_DISPER_BAR_VERSION', '2.0.3' );
+	define( 'SV_DISPER_BAR_VERSION', '2.0.4' );
 
 	define( 'SV_DISPER_BAR_PLUGIN_FILE', __FILE__ );
 

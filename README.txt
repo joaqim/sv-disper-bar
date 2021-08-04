@@ -32,6 +32,12 @@ Cumulative discount, the amount of which directly depends on the amount spent: t
 
 == Changelog ==
 
+= 2.0.4 =
+* Fix : Add ```css background-attachment: fixed;``` to progress bar to avoid stretching
+
+= 2.0.3 =
+* Add : Animated stripes to progress bar
+
 = 2.0.2 =
 * Add : Animation to progress bar (WIP)
 
