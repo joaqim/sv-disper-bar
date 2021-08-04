@@ -142,21 +142,7 @@ body {
 	}
 }
 
-.sv-disper-cap-ends {
-	margin: 0;
-	position: relative;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 0.3em;
-	height: 90%;
-	background: rgb(150,150,150);
-}
-
 .sv-disper-bar-striped {
-	background-size: 160% 100%;
-	background-attachment: fixed;
-
 	animation: progress-animation 16s linear infinite;
 }
 

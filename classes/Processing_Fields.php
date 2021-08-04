@@ -145,7 +145,6 @@ class Processing_Fields extends Main {
 				$functions->check_color( $value['mess-background'] )            == false ||
 				$functions->check_color( $value['link-color'] )                 == false ||
 				$functions->check_color( $value['bar-background'] )             == false ||
-				$functions->check_color( $value['bar-cap-ends'] )				        == false ||
 				$functions->check_color( $value['bar-stripe-primary'] )         == false ||
 				$functions->check_color( $value['bar-stripe-secondary'] )       == false ||
 				$functions->check_color( $value['price-color'] )                == false ||

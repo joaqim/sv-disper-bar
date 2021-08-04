@@ -71,7 +71,6 @@ class Front extends Main {
 					<span id="sv-disper-link-text"><?php echo $text_button ?></span>
 				</a>
 			</div>
-			<div class="sv-disper-cap-ends"></div>
 			<div class="sv-disper-prices">
 				<div
 					id="sv-disper-bar"
@@ -82,7 +81,6 @@ class Front extends Main {
 				</div>
 				<?php self::html_item() ?>
 			</div>
-			<div class="sv-disper-cap-ends"></div>
 		</div>
 		<?php
 	}
