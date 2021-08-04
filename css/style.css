@@ -154,7 +154,7 @@ body {
 }
 
 .sv-disper-bar-striped {
-	background-size: 160% 100%;
+	background-size: 120% 100%;
 	background-attachment: fixed;
 
 	animation: progress-animation 16s linear infinite;
