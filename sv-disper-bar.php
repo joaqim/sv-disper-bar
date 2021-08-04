@@ -6,7 +6,7 @@
  * Author URI:  https://sovetit.ru
  * Author:      Pavel Ketov
  * Contributors: Joaqim
- * Version:     2.0.2
+ * Version:     2.0.4
  * License:     GPL-2.0+
  * Text Domain: sv_disper_bar
  * Domain Path: /languages

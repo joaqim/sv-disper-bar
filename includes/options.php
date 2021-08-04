@@ -16,7 +16,8 @@ function sv_disper_bar_settings_callback( $args ) {
 	$value   	= sanitize_text_field( $args['value'] );
 	$options 	= new Options();
 	$settings 	= $options->settings();
-	$checked 	= ( empty( $settings['mess']['price_mobile'] ) ) ? '' : ' checked="checked"';
+	$checked_mobile 	= ( empty( $settings['mess']['price_mobile'] ) ) ? '' : ' checked="checked"';
+	$checked_striped 	= ( empty( $settings['mess']['striped_bar'] ) ) ? '' : ' checked="checked"';
 	?>
 	<table class="sv-disper-settings-box">
 		<tr>
@@ -34,9 +35,16 @@ function sv_disper_bar_settings_callback( $args ) {
 		<tr>
 			<td><?php _e( 'Show prices<br>on mobile', SV_DISPER_BAR_PLUGIN_DOMAIN ) ?></td>
 			<td>
-				<input type="checkbox" name="<?php echo $name ?>[<?php echo $value ?>][price_mobile]"<?php echo $checked ?>>
+				<input type="checkbox" name="<?php echo $name ?>[<?php echo $value ?>][price_mobile]"<?php echo $checked_mobile ?>>
 			</td>
 		</tr>
+		<tr>
+			<td><?php _e( 'Use Stripes of color on Progress Bar', SV_DISPER_BAR_PLUGIN_DOMAIN ) ?></td>
+			<td>
+				<input type="checkbox" name="<?php echo $name ?>[<?php echo $value ?>][striped_bar]"<?php echo $checked_striped ?>>
+			</td>
+		</tr>
+
 	</table>
 	<?php
 }

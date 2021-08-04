@@ -153,21 +153,15 @@ body {
 	background: rgb(150,150,150);
 }
 
-.sv-disper-bar {
-	background: repeating-linear-gradient(-55deg, #f40, #f40 10px, #f50 10px, #f50 20px);
-	background-size: 200% 100%;
+.sv-disper-bar-striped {
+	background-size: 160% 100%;
 	background-attachment: fixed;
 
-	animation: progress-animation 26s linear infinite;
+	animation: progress-animation 16s linear infinite;
 }
 
 .sv-disper-bar-animate {
-	border-right: 0px solid;
-	border-color: red;
-
-	transition-timing-function: ease;
-	animation: progress 3s ease-in alternate, progress-animation 26s linear infinite;
-
+	animation: progress 3s ease-in alternate, progress-animation 16s linear infinite;
 }
 
 @keyframes progress {

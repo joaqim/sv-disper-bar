@@ -51,6 +51,8 @@ class Front extends Main {
 		$settings 		= $options->settings();
 		$sv_width     = $functions->width();
 		$animate_bar  = $sv_width == 0;
+		$striped_bar  = (! empty( $settings['mess']['striped_bar'] ) );
+
 		if ( $sv_counter > 0 ) {
 			$link_button = apply_filters( 'sv_disper_bar_link_button', $settings['mess']['link_button'] );
 			$text_button = sprintf(
@@ -73,7 +75,9 @@ class Front extends Main {
 			<div class="sv-disper-prices">
 				<div
 					id="sv-disper-bar"
-					<?php echo 'class="sv-disper-bar' . (($animate_bar) ? ' sv-disper-bar-animate"' : '"') ?>
+					<?php echo 'class="sv-disper-bar' .
+					(($animate_bar) ? ' sv-disper-bar-animate' : '') .
+					(($striped_bar) ? ' sv-disper-bar-striped' : '') . '"' ?>
 					<?php echo $prices_bar_percent ?>>
 				</div>
 				<?php self::html_item() ?>
