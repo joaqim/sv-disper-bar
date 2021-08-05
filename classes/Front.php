@@ -50,7 +50,7 @@ class Front extends Main {
 		$sv_counter 	= $functions->bar_counter();
 		$settings 		= $options->settings();
 		$sv_width     = $functions->width();
-		$animate_bar  = $sv_width == 0;
+		$animate_bar  = ($sv_width == 0 && is_front_page());
 		$striped_bar  = (! empty( $settings['mess']['striped_bar'] ) );
 
 		if ( $sv_counter > 0 ) {
