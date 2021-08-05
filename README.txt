@@ -32,6 +32,10 @@ Cumulative discount, the amount of which directly depends on the amount spent: t
 
 == Changelog ==
 
+= 2.0.6 =
+* Fix : Progress bar animation is now better
+* Add : Progress bar initial animation now only used on front page
+
 = 2.0.4 =
 * Add : Add optional striped progress bar
 
