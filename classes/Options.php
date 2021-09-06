@@ -40,20 +40,16 @@ class Options extends Main {
 					'percent' => 0,
 				],
 				1 => [
-					'price' => 1000,
-					'percent' => 1,
+					'price' => 60,
+					'percent' => 8,
 				],
 				2 => [
-					'price' => 3000,
-					'percent' => 3,
+					'price' => 100,
+					'percent' => 10
 				],
 				3 => [
-					'price' => 5000,
+					'price' => 140,
 					'percent' => 5,
-				],
-				4 => [
-					'price' => 10000,
-					'percent' => 10,
 				],
 			],
 		];
@@ -73,13 +69,13 @@ class Options extends Main {
 	public function colors() {
 		$default = [
 			'color' => [
-				'container-background'        => '#3858e9',
-				'mess-border'                 => '#3858e9',
-				'mess-background'             => '#c107b7',
-				'link-color'                  => '#ffffff',
+				'container-background'        => '#000000',
+				'mess-border'                 => '#000000',
+				'mess-background'             => '#000000',
+				'link-color'                  => '#c6c8c8',
 				'bar-background'              => '#52b344',
-				'bar-stripe-primary'					=> '#fbbc04',
-				'bar-stripe-secondary'				=> '#ffab1c',
+				'bar-stripe-primary'          => '#fbbc04',
+				'bar-stripe-secondary'        => '#ffab1c',
 				'item-background'             => '#ffffff',
 				'price-color'                 => '#292929',
 				'price-background'            => '#ffffff',
