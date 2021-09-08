@@ -60,9 +60,9 @@
 
 /*** PREVIEW ***/
 .sv-disper-container-preview {
-	margin-top: 160px;
+	margin-top: 40px;
 	display: flex;
-	position: sticky;
+	position: relative;
 	left: 0;
 	bottom: 25px;
 	width: 100%;
@@ -132,4 +132,18 @@
 	border-width: 2px 2px 0 2px;
 	border-style: solid;
 	z-index: 3;
+}
+
+.sv-disper-bar-preview-striped-animation {
+	animation: stripe-animation 16s linear infinite;
+}
+
+
+@keyframes stripe-animation {
+	from {
+		background-position: 100%;
+	}
+	to {
+		background-position: 0;
+	}
 }

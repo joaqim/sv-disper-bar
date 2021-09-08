@@ -1,7 +1,0 @@
-* sv-disper-bar
-
-** Notes
-*** TODO Make progress bar width animation faster relative to amount of change?
-*** TODO Create a pointer or graphic on end of progress bar
-*** TODO Make initial animation more flashy
-*** TODO Add animations/effects when user reaches a discount breakpoint

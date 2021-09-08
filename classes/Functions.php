@@ -136,6 +136,7 @@ class Functions extends Main {
 			'sv_percent' => [
 				'sv_counter' 	=> $this->bar_counter(),
 				'sv_width' 		=> $this->width(),
+				'sv_money_saved' => ($this->sub_total() * $this->bar_counter())
 			]
 		];
 		$json_percent = wp_json_encode( $json_percent );

@@ -142,9 +142,12 @@ body {
 	}
 }
 
+.sv-disper-bar-striped {
+	animation: striped-animation 16s linear infinite;
+}
+
 .sv-disper-bar-animate {
-	transition-timing-function: ease;
-	animation: progress 3s ease-in alternate;
+	animation: progress 3s ease-in, striped-animation 16s linear infinite;
 }
 
 @keyframes progress {
@@ -152,9 +155,20 @@ body {
 		width: 0%;
 		animation-timing-function: ease-out;
 	}
-	50% {
+	30% {
 		width: 30%;
-		animation-delay: 5s;
 		animation-timing-function: ease-in-out;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+@keyframes striped-animation {
+	from {
+		background-position: 100%;
+	}
+	to {
+		background-position: 0;
 	}
 }

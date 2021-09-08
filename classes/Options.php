@@ -16,6 +16,7 @@ class Options extends Main {
 				'text_button'   => esc_html__( 'Get a discount', SV_DISPER_BAR_PLUGIN_DOMAIN ),
 				'link_button'   => wc_get_page_permalink( 'shop' ),
 				'price_mobile'  => 'on',
+				'striped_bar'		=> 'on'
 			]
 		];
 		$options = get_option( 'sv-disper-bar-settings', $default );
@@ -39,20 +40,16 @@ class Options extends Main {
 					'percent' => 0,
 				],
 				1 => [
-					'price' => 1000,
-					'percent' => 1,
+					'price' => 60,
+					'percent' => 8,
 				],
 				2 => [
-					'price' => 3000,
-					'percent' => 3,
+					'price' => 100,
+					'percent' => 10
 				],
 				3 => [
-					'price' => 5000,
+					'price' => 140,
 					'percent' => 5,
-				],
-				4 => [
-					'price' => 10000,
-					'percent' => 10,
 				],
 			],
 		];
@@ -72,11 +69,13 @@ class Options extends Main {
 	public function colors() {
 		$default = [
 			'color' => [
-				'container-background'        => '#3858e9',
-				'mess-border'                 => '#3858e9',
-				'mess-background'             => '#c107b7',
-				'link-color'                  => '#ffffff',
+				'container-background'        => '#000000',
+				'mess-border'                 => '#000000',
+				'mess-background'             => '#000000',
+				'link-color'                  => '#c6c8c8',
 				'bar-background'              => '#52b344',
+				'bar-stripe-primary'          => '#fbbc04',
+				'bar-stripe-secondary'        => '#ffab1c',
 				'item-background'             => '#ffffff',
 				'price-color'                 => '#292929',
 				'price-background'            => '#ffffff',
@@ -104,6 +103,12 @@ class Options extends Main {
 				break;
 			case 'bar-background' :
 				$title = esc_html__( 'Background color of dynamic progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
+				break;
+			case 'bar-stripe-primary' :
+				$title = esc_html__( 'Primary color of striped progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
+				break;
+			case 'bar-stripe-secondary' :
+				$title = esc_html__( 'Secondary color of striped progress bar', SV_DISPER_BAR_PLUGIN_DOMAIN );
 				break;
 			case 'item-background' :
 				$title = esc_html__( 'End point label background color', SV_DISPER_BAR_PLUGIN_DOMAIN );
@@ -175,6 +180,11 @@ class Options extends Main {
 		.sv-disper-container .sv-disper-prices .sv-disper-bar {
 			background-color: {$this->color_css( 'bar-background' )};
 		}
+		.sv-disper-bar-striped {
+			background: repeating-linear-gradient(-55deg, {$this->color_css( 'bar-stripe-primary' )}, {$this->color_css( 'bar-stripe-primary' )} 10px, {$this->color_css( 'bar-stripe-secondary' )} 10px, {$this->color_css( 'bar-stripe-secondary' )} 20px);
+			background-attachment: fixed;
+			background-size: 120% 100%;
+		}
 		.sv-disper-container .sv-disper-prices .sv-disper-item {
 			background-color: {$this->color_css( 'item-background' )};
 		}
@@ -207,7 +217,30 @@ class Options extends Main {
 				</span>
 			</div>
 			<div class="sv-disper-prices-preview">
-				<div class="sv-disper-bar-preview" style="width:15%; background-color:<?php echo $this->color_css( 'bar-background' ) ?>"></div>
+			<div class="sv-disper-bar-preview" style="width:15%; background-color:<?php echo $this->color_css( 'bar-background' ) ?> ">
+</div>
+				<div class="sv-disper-item-preview" style="left:25%; background-color:<?php echo $this->color_css( 'item-background' ) ?>">
+					<div class="sv-disper-data-title" style="color:<?php echo $this->color_css( 'price-title-color' ) ?>;border-color:<?php echo $this->color_css( 'price-title-border' ) ?>;background-color:<?php echo $this->color_css( 'price-title-background' ) ?>">
+						<?php echo sprintf(
+							esc_html__( 'Discount: %d%s', SV_DISPER_BAR_PLUGIN_DOMAIN ),
+							15, '%'
+						) ?>
+					</div>
+					<div class="sv-disper-price-preview" style="color:<?php echo $this->color_css( 'price-color' ) ?>; background-color:<?php echo $this->color_css( 'price-background' ) ?>">
+						<?php echo sprintf( esc_html__( 'of %s', SV_DISPER_BAR_PLUGIN_DOMAIN ), wc_price( wc_format_decimal( '1,500', false ), [ 'currency' => get_woocommerce_currency() ] )) ?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sv-disper-container-preview" style="background-color:<?php echo $this->color_css( 'container-background' ) ?>">
+			<div class="sv-disper-mess-preview" style="border-color:<?php echo $this->color_css( 'mess-border' ) ?>;background-color:<?php echo $this->color_css( 'mess-background' ) ?>">
+				<span class="sv-disper-link-preview" style="color:<?php echo $this->color_css( 'link-color' ) ?>">
+					<?php esc_html_e( 'Get a discount', SV_DISPER_BAR_PLUGIN_DOMAIN ) ?>
+				</span>
+			</div>
+			<div class="sv-disper-prices-preview">
+			<div class="sv-disper-bar-preview sv-disper-bar-preview-striped-animation" style="width:15%;  <?php echo 'background: repeating-linear-gradient(-55deg, ' . $this->color_css( 'bar-stripe-primary' ) . ', ' . $this->color_css( 'bar-stripe-primary' ) . ' 10px, ' . $this->color_css( 'bar-stripe-secondary' ) . ' 10px, ' . $this->color_css( 'bar-stripe-secondary' ) . ' 20px);' ?>">
+</div>
 				<div class="sv-disper-item-preview" style="left:25%; background-color:<?php echo $this->color_css( 'item-background' ) ?>">
 					<div class="sv-disper-data-title" style="color:<?php echo $this->color_css( 'price-title-color' ) ?>;border-color:<?php echo $this->color_css( 'price-title-border' ) ?>;background-color:<?php echo $this->color_css( 'price-title-background' ) ?>">
 						<?php echo sprintf(
